@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+}
+main{
+    margin-left:50px ;
+}
+p{
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+span{
+    font-weight: 700;
+}
+.var, .debut, .fin{
+    margin-left: -20px;
+}

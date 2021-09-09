@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercice d'Algorithme</title>
+</head>
+<body>
+    <main>
+        <h1>Exercice 3.2</h1>
+        <h2>Algorithme Signe_Produit1</h2>
+            <p>
+                <span class="var">Var</span>: <br>
+                nb1, nb2 : Réel <br>
+                <span class="debut">Debut</span> <br>
+                    <span>Ecrire</span> ("Entrer un premier nombre:") <br>
+                    <span>Lire</span> (nb1) <br>
+                    <span>Ecrire</span> ("Entrer un deuxième nombre:") <br>
+                    <span>Lire</span> (nb2) <br>
+                    si( (nb1 > 0 et nb2 > 0) ou (nb1 < 0 et nb2 < 0 ) ) alors <br>
+                    <span>Ecrire</span> ("Le produit de ", nb1 , "par", nb2, "est positif") <br>
+                    fin si <br>
+                    si( (nb1 < 0 et nb2 > 0) ou (nb1 > 0 et nb2 < 0) ) alors <br>
+                    <span>Ecrire</span> ("Le produit de ", nb1 , "par", nb2, "est négatif") <br>
+                    fin si <br>
+                <span class="fin">Fin</span>   
+            </p>
+            <h1>Exercice 3.3</h1>
+        <h2>Algorithme Signe_Produit1</h2>
+            <p>
+                <span class="var">Var</span>: <br>
+                nom1,nom2,nom3:chaine <br>
+                <span class="debut">Debut</span> <br>
+                    <span>Ecrire</span> ("Entrer un premier nom:") <br>
+                    <span>Lire</span> (nom1) <br>
+                    <span>Ecrire</span> ("Entrer un deuxième nom:") <br>
+                    <span>Lire</span> (nom2) <br>
+                    <span>Ecrire</span> ("Entrer un troisième nom:") <br>
+                    <span>Lire</span> (nom3) <br>
+                    si( ASC(nom1[1]) > ASC(nom2[1]) ) et (ASC(nom2[1]) > ASC(nom3[1]) ) alors <br>
+                    <span>Ecrire</span> ("les trois noms sont rangé dans l'ordre alphabétique") <br>
+                     sinon <br>
+                     <span>Ecrire</span> ("Les trois noms ne sont pas rangé dans l'ordre alphabétique") <br>
+                    fin si <br>
+                <span class="fin">Fin</span>   
+            </p>
+
+            <h1>Exercice 3.4</h1>
+            <h2>Algorithme Signe_Nombre</h2>
+            <p>
+                <span class="var">Var</span>: <br>
+                nb : Réel <br>
+                <span class="debut">Debut</span> <br>
+                    <span>Ecrire</span> ("Entrer un nombre:") <br>
+                    <span>Lire</span> (nb) <br>
+                    si( (nb > 0 ) alors <br>
+                    <span>Ecrire</span> (nb,"est positif") <br>
+                     sinon si(nb < 0) alors <br>
+                    <span>Ecrire</span> (nb , "est négatif") <br>
+                     sinon <br>
+                     <span>Ecrire</span> (nb, "est nul") <br>
+                     fin si <br>
+                     fin si <br>
+                <span class="fin">Fin</span>   
+            </p>
+
+            <h1>Exercice 3.5</h1>
+            <h2>Algorithme Signe_Produit</h2>
+            <p>
+                <span class="var">Var</span>: <br>
+                nb1, nb2 : Réel <br>
+                <span class="debut">Debut</span> <br>
+                    <span>Ecrire</span> ("Entrer un premier nombre:") <br>
+                    <span>Lire</span> (nb1) <br>
+                    <span>Ecrire</span> ("Entrer un deuxième nombre:") <br>
+                    <span>Lire</span> (nb2) <br>
+                    si( (nb1 > 0 et nb2 > 0) ou (nb1 < 0 et nb2 < 0 ) ) alors <br>
+                    <span>Ecrire</span> ("Le produit de ", nb1 , "par", nb2, "est positif") <br>
+                    sinon si( (nb1 < 0 et nb2 > 0) ou (nb1 > 0 et nb2 < 0) ) alors <br>
+                    <span>Ecrire</span> ("Le produit de ", nb1 , "par", nb2, "est négatif") <br>
+                    sinon <br>
+                    <span>Ecrire</span> ("Le produit de ", nb1 , "par", nb2, "est nul") <br>
+                    fin si <br>
+                    fin si <br>
+                <span class="fin">Fin</span>   
+            </p>
+
+            <h1>Exercice 3.6</h1>
+            <h2>Algorithme connexion</h2>
+            <p>
+                <span class="var">Var</span>: <br>
+                nom, prenom, email, mp : string <br>
+                <span class="debut">Debut</span> <br>
+                    <span>Ecrire</span> ("Entrer votre nom:") <br>
+                    <span>Lire</span> (nom) <br>
+                    <span>Ecrire</span> ("Entrer votre prénom:") <br>
+                    <span>Lire</span> (prenom) <br>
+                    <span>Ecrire</span> ("Entrer votre email:") <br>
+                    <span>Lire</span> (email) <br>
+                    <span>Ecrire</span> ("Entrer votre mot de pass:") <br>
+                    <span>Lire</span> (mp) <br>
+                    si( length(mp) < 8 ) alors <br>
+                    <span>Ecrire</span> ("Votre mot de pass doit comporter 8 caractères") <br>
+                    si(mp != like_8% @mail.com) alors <br>
+                    <span>Ecrire</span> ("Erreur de mot de pass") <br>
+                    sinon <br>
+                    <span>Ecrire</span> ("Vos information ont bien été enregistré") <br>
+                    fin si <br>
+                    fin si <br>
+                <span class="fin">Fin</span>   
+            </p>
+    </main>
+</body>
+</html>
